@@ -1,16 +1,32 @@
-nav li {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 3px;
-    cursor: pointer;
-}
-
-nav li hr {
+nav li .active::after {
+    background-color: red;
+    border-radius: 5px;
     width: 80%;
     height: 3px;
-    background-color: #ff4141;
-    border-radius: 70px;
-    border: none;
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -10px;
+}
+
+nav li {
+    position: relative;
+}
+
+nav li a::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -10px;
+    width: 0;
+    height: 3px;
+    background-color: transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+nav li a:hover::before {
+    width: 80%;
+    background-color: red;
 }
