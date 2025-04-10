@@ -1,6 +1,29 @@
 @import "tailwindcss";
 
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #FFF;
 }
 
+.container {
+    max-width: 1360px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.title::after {
+    content: "";
+    width: 200px;
+    height: 6px;
+    background-color: #252525;
+    margin-top: 10px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
