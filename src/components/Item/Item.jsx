@@ -1,8 +1,8 @@
-import React from 'react';
+import React from "react";
 
 const Item = ({ name, image, new_price, old_price }) => {
   return (
-    <div className="item w-[350px] hover:transform hover:scale-[1.02] transition-all duration-600 ease-in-out bg-white rounded-[10px] shadow-lg p-[20px]">
+    <div className="item w-[320px] hover:transform hover:scale-[1.02] transition-all duration-600 ease-in-out bg-white rounded-[10px] shadow-lg p-[20px]">
       <img src={image} alt="" />
       <h2 className="item-name">{name}</h2>
       <div className="item-price flex gap-[20px] text-[#374151] text-[18px] font-[600]">

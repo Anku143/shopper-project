@@ -5,13 +5,13 @@ import Item from "../Item/Item";
 
 const Collection = () => {
   return (
-    <div className="collection">
+    <div className="collection py-[60px] bg-[#f3f4f6]">
       <div className="container">
         <div className="collection_content">
           <h2 className="text-[#171717] text-[50px] font-[600] relative text-center uppercase title">
             New Collection
           </h2>
-          <div className="collection_items">
+          <div className="collection_items grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 pt-[40px]">
             {new_collections.map((item, i) => {
               return (
                 <Item

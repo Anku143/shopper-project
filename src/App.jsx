@@ -1,11 +1,12 @@
-import './App.css';
-import Navbar from './components/Navbar/Navbar';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Shop from './page/Shop';
-import ShopCategory from './page/ShopCategory';
-import Product from './page/Product';
-import Cart from './page/Cart';
-import LoginSignup from './page/LoginSignup';
+import "./App.css";
+import Navbar from "./components/Navbar/Navbar";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Shop from "./page/Shop";
+import ShopCategory from "./page/ShopCategory";
+import Product from "./page/Product";
+import Cart from "./page/Cart";
+import LoginSignup from "./page/LoginSignup";
+import Error from "./page/Error";
 
 function App() {
   return (
@@ -22,7 +23,7 @@ function App() {
           </Route>
           <Route path="/cart" element={<Cart />} />
           <Route path="/login" element={<LoginSignup />} />
-
+          <Route path="*" element={<Error />} />
         </Routes>
       </BrowserRouter>
     </>

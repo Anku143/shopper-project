@@ -11,7 +11,7 @@ const Popular = () => {
           Popular in women
         </h2>
 
-        <div className="popular-container flex justify-between items-center gap-[20px] pt-[40px]">
+        <div className="popular-container grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5  pt-[40px]">
           {data_product.map((item, i) => {
             return (
               <Item

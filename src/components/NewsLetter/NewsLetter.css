@@ -1,0 +1,63 @@
+.news {
+    position: relative;
+    padding: 60px 0;
+}
+
+.news-letter-img {
+    width: 100%;
+    max-width: 1137px;
+    margin: 0 auto;
+}
+
+
+.news-letter {
+    background: rgba(247, 247, 247, 0.75);
+    padding: 52px 72px;
+    position: absolute;
+    width: 100%;
+    top: 65%;
+    transform: translateY(-65%);
+}
+
+.newsletter {
+    padding: 88px 0 80px;
+    border: 1px solid #837D1D;
+}
+
+.newspara {
+    margin-top: 6px;
+    margin-bottom: 32px;
+}
+
+button.color-black.fw-500.newsbtn {
+    background: transparent;
+    font-size: 16px;
+    letter-spacing: -0.4px;
+    cursor: pointer;
+}
+
+input.newsemail {
+    background: transparent;
+    font-size: 16px;
+    width: 100%;
+    max-width: 330px;
+    outline: none;
+}
+
+form.news-form {
+    width: 100%;
+    max-width: 488px;
+    margin: 0 auto;
+    border-bottom: 1px solid var(--Black-300, #CBCBCB);
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    padding: 13px 0;
+}
+
+
+
+
+input:-webkit-autofill {
+    transition: background-color 5000s ease-in-out 0s;
+}
