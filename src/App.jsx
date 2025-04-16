@@ -7,6 +7,7 @@ import Product from "./page/Product";
 import Cart from "./page/Cart";
 import LoginSignup from "./page/LoginSignup";
 import Error from "./page/Error";
+import Company from "./components/Company/Company";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path="/cart" element={<Cart />} />
           <Route path="/login" element={<LoginSignup />} />
           <Route path="*" element={<Error />} />
+          <Route path="/company" element={<Company />} />
         </Routes>
       </BrowserRouter>
     </>
