@@ -1,11 +1,17 @@
-import React from 'react'
+import React, { useContext } from "react";
 
-const ShopCategory = () => {
+import { ShopContext } from "../Context/ShopContext";
+
+import Timer from "../components/Timer/Timer";
+
+const ShopCategory = ({ banner }) => {
+  const { all_product } = useContext(ShopContext);
   return (
     <div>
-      <h2>1</h2>
+      <img src={banner} alt="banner" />
+      <Timer />
     </div>
-  )
-}
+  );
+};
 
-export default ShopCategory
+export default ShopCategory;
