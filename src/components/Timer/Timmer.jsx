@@ -50,7 +50,8 @@ const Timmer = ({ duration }) => {
 
   return (
     <div>
-      <p>{getFormateTime(timeLeft)}</p>
+      <p></p>
+      {getFormateTime(timeLeft)}
     </div>
   );
 };

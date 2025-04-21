@@ -18,8 +18,8 @@ const Collection = () => {
                   key={i}
                   id={item.id}
                   name={item.name}
-                  new_price={item.new_price}
                   image={item.image}
+                  new_price={item.new_price}
                   old_price={item.old_price}
                 />
               );
