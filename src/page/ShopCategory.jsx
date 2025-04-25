@@ -40,9 +40,9 @@ const ShopCategory = (props) => {
               Sort by <img src={dropdown_icon} alt="sort" className="h-[9px]" />
             </div>
           </div>
-
           <div className="product_grid grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
-            {all_product.map((item, i) => {
+            {/* {all_product.map((item, i) => {
+              console.log("Item Category:", item.category);
               if (props.category === item.category) {
                 return (
                   <Item
@@ -57,7 +57,21 @@ const ShopCategory = (props) => {
               } else {
                 return null;
               }
-            })}
+            })} */}
+
+            {all_product.map((item, i) => (
+              <Item
+                key={i}
+                id={item.id}
+                name={item.name}
+                image={item.image}
+                new_price={item.new_price}
+                old_price={item.old_price}
+              />
+            ))}
+          </div>
+          <div className="shopCategory-load flex justify-center items-center mx-auto w-[233px] h-[69px] rounded-3xl bg-[#ededed] text-center text-[20px] font-[500] text-[#787878] cursor-pointer hover:bg-[#0000003e] transition-all duration-300 ease-in-out mt-[150px]">
+            Explore More
           </div>
         </div>
       </div>
